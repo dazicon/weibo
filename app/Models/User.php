@@ -12,7 +12,7 @@ class User extends Authenticatable
     /**
      * The attributes that are mass assignable.
      *
-     * @var array
+     * @var array允许批量赋值的字段
      */
     protected $fillable = [
         'name', 'email', 'password',
@@ -26,4 +26,13 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * gravatar头像
+     */
+     public function gravatar($size = '100')
+     {
+        $hash = md5(strtolower(trim($this->attributes['email'])));
+        return "http://www.gravatar.com/avatar/$hash?s=$size";
+     }
 }
