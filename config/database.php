@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__.'/bootstrap/helpers.php';
 $db_config = get_db_config();
 
 return [
