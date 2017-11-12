@@ -68,6 +68,13 @@ p {
   }
 }
 
+#logout {
+  cursor: default;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
 /* footer */
 
 footer {
@@ -159,6 +166,12 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+.checkbox input[type="checkbox"] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 0px;
 }
 
 .panel {

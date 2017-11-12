@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'/bootstrap/helpers.php';
+require __DIR__.'/helpers.php';
 
 /*
 |--------------------------------------------------------------------------
